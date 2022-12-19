@@ -542,7 +542,7 @@ def image2torch(img):
     return img
 
 def do_detect(model, img, conf_thresh, nms_thresh, use_cuda=1):
-    model.eval()
+    #model.eval()
     t0 = time.time()
 
     if isinstance(img, Image.Image):
